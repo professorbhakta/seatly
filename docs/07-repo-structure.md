@@ -44,6 +44,7 @@ docs/
   01-origin-and-motivation.md
   …
   10-uml-diagrams.md
+  drawio/seatly-uml.drawio
 ```
 
 Runnable Flutter code lives on `main` and `code-file`, not on `convApp`.

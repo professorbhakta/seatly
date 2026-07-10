@@ -1,10 +1,33 @@
 # UML diagrams
 
-Seatly v0.1 — product and domain model views. Diagrams use [Mermaid](https://mermaid.js.org/) (renders on GitHub).
+Seatly v0.1 — product and domain model views.
+
+- **Editable source:** [drawio/seatly-uml.drawio](drawio/seatly-uml.drawio) — open in [diagrams.net](https://app.diagrams.net/) (draw.io)
+- **Preview on GitHub:** Mermaid blocks below (read-only render)
 
 Related: [02-product-vision.md](02-product-vision.md) · [03-rules-and-flows.md](03-rules-and-flows.md)
 
 Implementation reference: Flutter app on `main` / `code-file` branches.
+
+## How to open & edit (draw.io)
+
+1. Download or clone `convApp` and open `docs/drawio/seatly-uml.drawio`
+2. Go to [https://app.diagrams.net/](https://app.diagrams.net/) → **Open Existing Diagram**
+3. Select the file (or paste XML via **Extras → Edit Diagram**)
+4. Use the **tabs at the bottom** — 8 pages:
+
+| Page | Diagram |
+|------|---------|
+| `01-use-case` | Use case |
+| `02-class-diagram` | Domain class |
+| `03-component` | Flutter component layers |
+| `04-passenger-activity` | Passenger flow |
+| `05-conductor-activity` | Conductor ETM flow |
+| `06-sequence-seat-sale` | Sell seated ticket |
+| `07-sequence-track-gate` | PNR track gate |
+| `08-state-seat` | Seat states |
+
+After editing, save the `.drawio` file and commit on `convApp`. Update Mermaid below only if you want GitHub inline preview to match.
 
 ---
 

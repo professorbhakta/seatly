@@ -8,7 +8,7 @@ Any future agent or human should be able to understand Seatly from these docs wi
 
 - `README.md` — this file
 - `CONTRIBUTING.md` — where ideas vs code go
-- `docs/` — numbered product documents (01–09)
+- `docs/` — numbered product documents (01–10) + `docs/drawio/seatly-uml.drawio`
 
 ## What does NOT live here
 
@@ -33,7 +33,7 @@ Runnable Flutter app source is on other branches:
 | 07 | [repo-structure](docs/07-repo-structure.md) | Branch workflow |
 | 08 | [conversation-timeline](docs/08-conversation-timeline.md) | Condensed decision evolution |
 | 09 | [next-spiral](docs/09-next-spiral.md) | Near-term polish, pilot needs, non-goals |
-| 10 | [uml-diagrams](docs/10-uml-diagrams.md) | UML: use case, class, component, activity, sequence |
+| 10 | [uml-diagrams](docs/10-uml-diagrams.md) | UML (Mermaid + [draw.io source](docs/drawio/seatly-uml.drawio)) |
 
 **Working name:** Seatly (may rename later)
 

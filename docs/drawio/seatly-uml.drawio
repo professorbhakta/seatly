@@ -1,0 +1,455 @@
+<mxfile host="app.diagrams.net" agent="Seatly-convApp" version="24.7.0" type="device" pages="8">
+  <diagram id="page-use-case" name="01-use-case">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title1" value="Seatly v0.1 — Use Case Diagram" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-p" value="Passenger" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-c" value="Conductor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="520" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-p" value="Passenger" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="100" width="280" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="uc1" value="Search route (From → To)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="pkg-p">
+          <mxGeometry x="40" y="50" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc2" value="View service line-up &amp; timings" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="pkg-p">
+          <mxGeometry x="40" y="110" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc3" value="View occupancy (seats / standing)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="pkg-p">
+          <mxGeometry x="40" y="170" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc6" value="View service detail" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="pkg-p">
+          <mxGeometry x="40" y="230" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc4" value="Enter PNR" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="pkg-p">
+          <mxGeometry x="40" y="290" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc5" value="Track bus live" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="640" y="200" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pkg-c" value="Conductor ETM" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="480" width="280" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="uc7" value="List trips" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="pkg-c">
+          <mxGeometry x="40" y="50" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc8" value="View seat map" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="pkg-c">
+          <mxGeometry x="40" y="110" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc9" value="Sell seated ticket" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="pkg-c">
+          <mxGeometry x="40" y="170" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc10" value="Collect payment (Cash / UPI)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="pkg-c">
+          <mxGeometry x="40" y="230" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uc11" value="Sell standing ticket" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="pkg-c">
+          <mxGeometry x="40" y="290" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-uc1" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-p" target="uc1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-uc2" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-p" target="uc2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-uc3" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-p" target="uc3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-uc6" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-p" target="uc6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-uc4" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-p" target="uc4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-uc5" style="endArrow=none;html=1;dashed=1;" edge="1" parent="1" source="actor-p" target="uc5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-uc4-uc5" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&#xa;confirmed PNR" style="endArrow=open;dashed=1;html=1;" edge="1" parent="1" source="uc4" target="uc5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-uc7" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-c" target="uc7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-uc8" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-c" target="uc8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-uc9" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-c" target="uc9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-uc10" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-c" target="uc10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-uc11" style="endArrow=none;html=1;" edge="1" parent="1" source="actor-c" target="uc11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-uc9-uc10" style="endArrow=open;html=1;" edge="1" parent="1" source="uc9" target="uc10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-uc11-uc10" style="endArrow=open;html=1;" edge="1" parent="1" source="uc11" target="uc10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="note1" value="Standing sale only when all seats full" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;size=14;" vertex="1" parent="1">
+          <mxGeometry x="640" y="620" width="200" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-class" name="02-class-diagram">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title2" value="Seatly v0.1 — Domain Class Diagram" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cls-station" value="&amp;lt;&amp;lt;entity&amp;gt;&amp;gt;&#xa;Station&#xa;—&#xa;+ id: String&#xa;+ name: String" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cls-bus" value="&amp;lt;&amp;lt;entity&amp;gt;&amp;gt;&#xa;BusService&#xa;—&#xa;+ id, routeName: String&#xa;+ fromStationId, toStationId&#xa;+ departTime, arriveTime&#xa;+ totalSeats: int&#xa;+ onlineBookedSeats: List&amp;lt;int&amp;gt;&#xa;+ onboardOccupiedSeats: List&amp;lt;int&amp;gt;&#xa;+ standingCount: int&#xa;—&#xa;+ seatsLeft(): int&#xa;+ isSeatsFull(): bool&#xa;+ occupancyLabel(): String" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="260" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="cls-seatstatus" value="&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&#xa;SeatStatus&#xa;—&#xa;free&#xa;occupied&#xa;onlineBooked" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="100" width="160" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="cls-booking" value="Booking&#xa;—&#xa;+ pnr: String&#xa;+ serviceId: String&#xa;—&#xa;+ canTrack(service): bool" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720" y="280" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cls-ticket" value="&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&#xa;Ticket&#xa;—&#xa;+ serviceId: String&#xa;+ amount: double&#xa;+ issuedAt: DateTime" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="380" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="cls-seated" value="SeatedTicket&#xa;—&#xa;+ seatNumber: int" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="540" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cls-standing" value="StandingTicket&#xa;—&#xa;+ sequence: int" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="540" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cls-payment" value="Payment&#xa;—&#xa;+ method: PaymentMethod&#xa;+ amount: double&#xa;+ confirmed: bool" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="680" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cls-paymethod" value="&amp;lt;&amp;lt;enumeration&amp;gt;&amp;gt;&#xa;PaymentMethod&#xa;cash | upi" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="680" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cls-tripstore" value="TripStore&#xa;—&#xa;+ onboardSeats(serviceId)&#xa;+ standingCount(serviceId)&#xa;+ sellSeat(serviceId, seat)&#xa;+ sellStanding(serviceId)&#xa;+ applyOccupancy(BusService)" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="960" y="380" width="240" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-station-bus" value="from / to" style="endArrow=open;html=1;endFill=0;" edge="1" parent="1" source="cls-station" target="cls-bus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-bus-seat" value="per seat" style="endArrow=open;html=1;endFill=0;" edge="1" parent="1" source="cls-bus" target="cls-seatstatus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-booking-bus" value="unlocks track" style="endArrow=open;html=1;endFill=0;" edge="1" parent="1" source="cls-booking" target="cls-bus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-seated-ticket" value="" style="endArrow=block;html=1;endFill=0;" edge="1" parent="1" source="cls-seated" target="cls-ticket">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-standing-ticket" value="" style="endArrow=block;html=1;endFill=0;" edge="1" parent="1" source="cls-standing" target="cls-ticket">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-ticket-payment" value="" style="endArrow=open;html=1;endFill=0;" edge="1" parent="1" source="cls-ticket" target="cls-payment">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-payment-method" value="" style="endArrow=open;html=1;endFill=0;" edge="1" parent="1" source="cls-payment" target="cls-paymethod">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel-store-bus" value="&amp;lt;&amp;lt;merge&amp;gt;&amp;gt;" style="endArrow=open;dashed=1;html=1;endFill=0;" edge="1" parent="1" source="cls-tripstore" target="cls-bus">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="occ-note" value="occupancy = onlineBooked ∪ onboardSold&#xa;standing when seatsLeft = 0" style="shape=note;whiteSpace=wrap;html=1;fillColor=#d5e8d4;size=14;" vertex="1" parent="1">
+          <mxGeometry x="960" y="100" width="240" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-component" name="03-component">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title3" value="Seatly v0.1 — Component Diagram (Flutter layers)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="20" width="500" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="layer-pres" value="Presentation" style="swimlane;fontStyle=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="1240" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-app" value="SeatlyApp" style="shape=component;html=1;" vertex="1" parent="layer-pres">
+          <mxGeometry x="40" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-ph" value="PassengerHome" style="shape=component;html=1;" vertex="1" parent="layer-pres">
+          <mxGeometry x="200" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-sd" value="ServiceDetail" style="shape=component;html=1;" vertex="1" parent="layer-pres">
+          <mxGeometry x="360" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-tr" value="TrackScreen" style="shape=component;html=1;" vertex="1" parent="layer-pres">
+          <mxGeometry x="520" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-ch" value="ConductorHome" style="shape=component;html=1;" vertex="1" parent="layer-pres">
+          <mxGeometry x="680" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-td" value="TripDetail" style="shape=component;html=1;" vertex="1" parent="layer-pres">
+          <mxGeometry x="840" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-ps" value="PaymentSheet" style="shape=component;html=1;" vertex="1" parent="layer-pres">
+          <mxGeometry x="1000" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-sg" value="SeatGrid" style="shape=component;html=1;" vertex="1" parent="layer-pres">
+          <mxGeometry x="1160" y="50" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="layer-state" value="State (Riverpod)" style="swimlane;fontStyle=1;startSize=30;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="1240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-prov" value="fromStationProvider | toStationProvider | filteredServicesProvider | conductorTripsProvider | demoPnrProvider" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="layer-state">
+          <mxGeometry x="40" y="50" width="1160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="layer-data" value="Domain &amp; Data" style="swimlane;fontStyle=1;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="80" y="480" width="1240" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-dd" value="demo_data&#xa;(stations, services)" style="shape=component;html=1;" vertex="1" parent="layer-data">
+          <mxGeometry x="200" y="50" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="comp-ts" value="TripStore&#xa;(Hive)" style="shape=component;html=1;" vertex="1" parent="layer-data">
+          <mxGeometry x="500" y="50" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dep1" style="endArrow=open;html=1;" edge="1" parent="1" source="comp-ph" target="comp-prov">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep2" style="endArrow=open;html=1;" edge="1" parent="1" source="comp-prov" target="comp-dd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep3" style="endArrow=open;html=1;" edge="1" parent="1" source="comp-prov" target="comp-ts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep4" style="endArrow=open;html=1;" edge="1" parent="1" source="comp-td" target="comp-ps">
+          <mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1060" y="260" /></Array></mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-passenger-act" name="04-passenger-activity">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="pa-start" value="" style="ellipse;fillColor=#000000;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="404" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-s1" value="Open Passenger tab" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="100" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-s2" value="Pick From station" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="180" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-s3" value="Pick To station" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="260" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-d1" value="From ≠ To?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="340" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-err" value="Show validation" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="560" y="355" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-s4" value="Filter services" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="460" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-s5" value="Show list: times + occupancy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="540" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-s6" value="Open service detail" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="620" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-d2" value="PNR confirmed&#xa;for service?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="700" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-track" value="Track bus (demo map)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="180" y="820" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-info" value="Timing + availability only" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="820" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-end" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="404" y="920" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="pa-e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-start" target="pa-s1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-s1" target="pa-s2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-s2" target="pa-s3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-s3" target="pa-d1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e5" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-d1" target="pa-err"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e6" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-d1" target="pa-s4"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-s4" target="pa-s5"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-s5" target="pa-s6"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-s6" target="pa-d2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e10" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-d2" target="pa-track"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e11" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-d2" target="pa-info"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-track" target="pa-end"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-e13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=block;html=1;" edge="1" parent="1" source="pa-info" target="pa-end"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pa-demo" value="Demo: ST9X2K1 + EXP-1101" style="shape=note;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="40" y="700" width="160" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-conductor-act" name="05-conductor-activity">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ca-start" value="" style="ellipse;fillColor=#000000;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="404" y="40" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-s1" value="Open Conductor tab" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="100" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-s2" value="Select trip" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="180" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-s3" value="Show seat grid" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="260" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-d1" value="User action?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="355" y="340" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-payseat" value="Payment sheet (seat)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="460" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-d2" value="All seats full?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="450" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-disabled" value="Standing disabled" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="740" y="465" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-paystand" value="Payment sheet (standing)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="540" y="580" width="170" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-pay" value="Cash or UPI confirm" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="680" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-persist" value="TripStore persist sale" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="330" y="760" width="180" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-refresh" value="Refresh occupancy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="840" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ca-e1" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-start" target="ca-s1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e2" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-s1" target="ca-s2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e3" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-s2" target="ca-s3"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e4" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-s3" target="ca-d1"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e5" value="Tap free seat" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-d1" target="ca-payseat"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e6" value="Standing btn" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-d1" target="ca-d2"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e7" value="No" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-d2" target="ca-disabled"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e8" value="Yes" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-d2" target="ca-paystand"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e9" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-payseat" target="ca-pay"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e10" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-paystand" target="ca-pay"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e11" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-pay" target="ca-persist"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e12" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-persist" target="ca-refresh"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ca-e13" style="endArrow=block;html=1;" edge="1" parent="1" source="ca-refresh" target="ca-s3"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="80" y="865" /><mxPoint x="80" y="285" /></Array></mxGeometry></mxCell>
+        <mxCell id="ca-e14" style="endArrow=block;html=1;dashed=1;" edge="1" parent="1" source="ca-disabled" target="ca-s3"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="900" y="490" /><mxPoint x="900" y="285" /></Array></mxGeometry></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-seq-seat" name="06-sequence-seat-sale">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sq-title" value="Sequence — Sell Seated Ticket" style="text;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="lifec" value=":Conductor" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="100" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="lifetd" value=":TripDetailScreen" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="120" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="lifesg" value=":SeatGrid" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="100" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="lifeps" value=":PaymentSheet" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="80" width="110" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="lifets" value=":TripStore" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="750" y="80" width="100" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="lifehive" value=":Hive" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="920" y="80" width="80" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" value="open trip" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="130" y="160" as="sourcePoint" /><mxPoint x="300" y="160" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="m2" value="render seat map" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="300" y="200" as="sourcePoint" /><mxPoint x="470" y="200" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="m3" value="tap free seat N" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="130" y="250" as="sourcePoint" /><mxPoint x="470" y="250" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="m4" value="show payment" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="470" y="300" as="sourcePoint" /><mxPoint x="635" y="300" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="m5" value="confirm payment" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="130" y="350" as="sourcePoint" /><mxPoint x="635" y="350" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="m6" value="sellSeat(serviceId, N)" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="635" y="400" as="sourcePoint" /><mxPoint x="800" y="400" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="m7" value="put onboard seats" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="800" y="450" as="sourcePoint" /><mxPoint x="960" y="450" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="m8" value="refresh → seat N occupied" style="endArrow=open;dashed=1;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="800" y="500" as="sourcePoint" /><mxPoint x="470" y="500" as="targetPoint" /></mxGeometry></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-seq-track" name="07-sequence-track-gate">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tq-title" value="Sequence — Passenger Track Gate (PNR)" style="text;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="20" width="350" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="tlp" value=":Passenger" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="tlsd" value=":ServiceDetailScreen" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="80" width="140" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="tlprov" value=":demoPnrProvider" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="80" width="120" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="tltr" value=":TrackScreen" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="80" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="t1" value="open EXP-1101 detail" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="130" y="150" as="sourcePoint" /><mxPoint x="350" y="150" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="t2" value="enter PNR" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="130" y="200" as="sourcePoint" /><mxPoint x="350" y="200" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="t3" value="update PNR" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="350" y="250" as="sourcePoint" /><mxPoint x="560" y="250" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="t4" value="canTrackWithPnr()" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1"><mxGeometry x="-0.5" y="10" relative="1" as="geometry"><mxPoint x="350" y="300" as="sourcePoint" /><mxPoint x="350" y="330" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="alt" value="alt [ST9X2K1 + EXP-1101]" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;" vertex="1" parent="1">
+          <mxGeometry x="200" y="340" width="600" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="t5" value="enable Track → open demo map" style="endArrow=block;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="130" y="380" as="sourcePoint" /><mxPoint x="750" y="380" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="t6" value="else: track disabled" style="endArrow=open;dashed=1;html=1;" edge="1" parent="1"><mxGeometry relative="1" as="geometry"><mxPoint x="350" y="420" as="sourcePoint" /><mxPoint x="130" y="420" as="targetPoint" /></mxGeometry></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="page-state-seat" name="08-state-seat">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="st-title" value="State Diagram — Seat on a Trip" style="text;html=1;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="20" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="st-init" value="" style="ellipse;fillColor=#000000;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="60" y="200" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="st-free" value="Free" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="140" y="190" width="100" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="st-online" value="OnlineBooked" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="360" y="100" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="st-occ" value="Occupied" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="360" y="280" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="st-e1" style="endArrow=block;html=1;" edge="1" parent="1" source="st-init" target="st-free"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="st-e2" value="pre-sold online" style="endArrow=block;html=1;" edge="1" parent="1" source="st-free" target="st-online"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="st-e3" value="conductor sells onboard" style="endArrow=block;html=1;" edge="1" parent="1" source="st-free" target="st-occ"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="st-note" value="Standing passengers are NOT a seat state.&#xa;They increment BusService.standingCount when all seats are OnlineBooked or Occupied." style="shape=note;whiteSpace=wrap;html=1;fillColor=#fff2cc;size=14;" vertex="1" parent="1">
+          <mxGeometry x="560" y="160" width="300" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
