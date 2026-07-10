@@ -33,6 +33,7 @@ Runnable Flutter app source is on other branches:
 | 07 | [repo-structure](docs/07-repo-structure.md) | Branch workflow |
 | 08 | [conversation-timeline](docs/08-conversation-timeline.md) | Condensed decision evolution |
 | 09 | [next-spiral](docs/09-next-spiral.md) | Near-term polish, pilot needs, non-goals |
+| 10 | [uml-diagrams](docs/10-uml-diagrams.md) | UML: use case, class, component, activity, sequence |
 
 **Working name:** Seatly (may rename later)
 

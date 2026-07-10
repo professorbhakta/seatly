@@ -42,8 +42,8 @@ README.md
 CONTRIBUTING.md
 docs/
   01-origin-and-motivation.md
-  02-product-vision.md
   …
+  10-uml-diagrams.md
 ```
 
 Runnable Flutter code lives on `main` and `code-file`, not on `convApp`.
