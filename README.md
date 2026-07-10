@@ -1,44 +1,26 @@
-# Seatly
+# Seatly — convApp (conversation & product docs)
 
-**Asaan sawari — know before you board.**
+This branch holds **Markdown only**: vision, rules, naming notes, and condensed conversation history.
 
-GSRTC-first bus awareness demo with Passenger line-up/search and Conductor ETM seat-map ticketing. Not affiliated with GSRTC. Demo data and simulated UPI only.
+**Runnable Flutter code** lives on:
 
-## Branches
+- [`main`](https://github.com/professorbhakta/seatly/tree/main) — stable, tested
+- [`code-file`](https://github.com/professorbhakta/seatly/tree/code-file) — WIP implementation
 
-| Branch | Purpose |
-|--------|---------|
-| `main` | Stable, tested Flutter app |
-| `code-file` | WIP / changeable implementation |
-| `convApp` | Product vision, rules, and conversation docs (Markdown only) |
+## Docs index
 
-## Run
+| Document | Topic |
+|----------|--------|
+| [origin-motivation.md](docs/origin-motivation.md) | Why Seatly exists |
+| [product-vision.md](docs/product-vision.md) | What we are building |
+| [rules-flows.md](docs/rules-flows.md) | Locked rules & user flows |
+| [competitive-notes.md](docs/competitive-notes.md) | RedBus, Chalo, naming crowdedness |
+| [honest-assessment.md](docs/honest-assessment.md) | Strengths, risks, v0.1 reality |
+| [naming.md](docs/naming.md) | Seatly working name |
+| [repo-branch-structure.md](docs/repo-branch-structure.md) | Branch workflow |
+| [conversation-timeline.md](docs/conversation-timeline.md) | Condensed decision log |
+| [next-spiral-non-goals.md](docs/next-spiral-non-goals.md) | What's next / what we skip |
 
-```bash
-flutter pub get
-flutter run
-```
+**Tagline direction:** Asaan sawari — know before you board.
 
-## Verify
-
-```bash
-flutter analyze
-flutter test
-```
-
-## Demo flows
-
-### Passenger
-1. Open **Passenger** tab.
-2. Pick **From** and **To** (e.g. Ahmedabad → Vadodara).
-3. Browse services with depart/arrive times and occupancy.
-4. Open a service detail; enter PNR `ST9X2K1` on **EXP-1101** to unlock **Track bus**.
-
-### Conductor
-1. Open **Conductor** tab and pick a trip.
-2. Tap a **free** seat → payment sheet (demo UPI QR or cash confirm).
-3. When all seats are full, **Sell standing ticket** becomes available.
-
-## Tech
-
-Flutter · Riverpod · Hive · qr_flutter
+Not affiliated with GSRTC. Demo data + simulated UPI only.
