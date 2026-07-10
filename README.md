@@ -1,4 +1,8 @@
-# Seatly
+# Seatly — code-file (WIP)
+
+> **This branch holds changeable / work-in-progress code.**  
+> When features are tested and verified, merge into `main`.  
+> Product ideas and conversation live on `convApp` (Markdown only).
 
 **Asaan sawari — know before you board.**
 
@@ -9,7 +13,7 @@ GSRTC-first bus awareness demo with Passenger line-up/search and Conductor ETM s
 | Branch | Purpose |
 |--------|---------|
 | `main` | Stable, tested Flutter app |
-| `code-file` | WIP / changeable implementation |
+| `code-file` | **You are here** — WIP / changeable implementation |
 | `convApp` | Product vision, rules, and conversation docs (Markdown only) |
 
 ## Run
