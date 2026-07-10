@@ -1,26 +1,41 @@
-# Seatly — convApp (conversation & product docs)
+# Seatly — convApp branch
 
-This branch holds **Markdown only**: vision, rules, naming notes, and condensed conversation history.
+This branch stores **product conversation, thoughts, decisions, and plans** as Markdown.
 
-**Runnable Flutter code** lives on:
+Any future agent or human should be able to understand Seatly from these docs without the original chat history.
 
-- [`main`](https://github.com/professorbhakta/seatly/tree/main) — stable, tested
-- [`code-file`](https://github.com/professorbhakta/seatly/tree/code-file) — WIP implementation
+## What lives here
+
+- `README.md` — this file
+- `CONTRIBUTING.md` — where ideas vs code go
+- `docs/` — numbered product documents (01–09)
+
+## What does NOT live here
+
+Runnable Flutter app source is on other branches:
+
+| Branch | Contents |
+|--------|----------|
+| [`main`](https://github.com/professorbhakta/seatly/tree/main) | Final, tested Flutter code |
+| [`code-file`](https://github.com/professorbhakta/seatly/tree/code-file) | Changeable / WIP code |
+| **`convApp`** | Docs only (you are here) |
 
 ## Docs index
 
-| Document | Topic |
-|----------|--------|
-| [origin-motivation.md](docs/origin-motivation.md) | Why Seatly exists |
-| [product-vision.md](docs/product-vision.md) | What we are building |
-| [rules-flows.md](docs/rules-flows.md) | Locked rules & user flows |
-| [competitive-notes.md](docs/competitive-notes.md) | RedBus, Chalo, naming crowdedness |
-| [honest-assessment.md](docs/honest-assessment.md) | Strengths, risks, v0.1 reality |
-| [naming.md](docs/naming.md) | Seatly working name |
-| [repo-branch-structure.md](docs/repo-branch-structure.md) | Branch workflow |
-| [conversation-timeline.md](docs/conversation-timeline.md) | Condensed decision log |
-| [next-spiral-non-goals.md](docs/next-spiral-non-goals.md) | What's next / what we skip |
+| # | Document | Topic |
+|---|----------|--------|
+| 01 | [origin-and-motivation](docs/01-origin-and-motivation.md) | Why Seatly exists |
+| 02 | [product-vision](docs/02-product-vision.md) | What we are building |
+| 03 | [rules-and-flows](docs/03-rules-and-flows.md) | Locked rules and user flows |
+| 04 | [competitive-landscape](docs/04-competitive-landscape.md) | RedBus, Chalo, naming |
+| 05 | [honest-assessment](docs/05-honest-assessment.md) | Strengths, risks, reality check |
+| 06 | [naming](docs/06-naming.md) | Seatly working name and alternatives |
+| 07 | [repo-structure](docs/07-repo-structure.md) | Branch workflow |
+| 08 | [conversation-timeline](docs/08-conversation-timeline.md) | Condensed decision evolution |
+| 09 | [next-spiral](docs/09-next-spiral.md) | Near-term polish, pilot needs, non-goals |
+
+**Working name:** Seatly (may rename later)
 
 **Tagline direction:** Asaan sawari — know before you board.
 
-Not affiliated with GSRTC. Demo data + simulated UPI only.
+Not affiliated with GSRTC. Demo data and simulated UPI only in v0.1.
