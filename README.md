@@ -16,6 +16,10 @@ GSRTC-first bus awareness demo with Passenger line-up/search and Conductor ETM s
 | `code-file` | **You are here** — WIP / changeable implementation |
 | `convApp` | Product vision, rules, and conversation docs (Markdown only) |
 
+## Local UI demo (no Flutter required)
+
+Open **[docs/wireframes/index.html](docs/wireframes/index.html)** in a browser — interactive Passenger + Conductor prototype with guided tours and a Dev panel. See [docs/START_HERE.md](docs/START_HERE.md).
+
 ## Run
 
 ```bash
